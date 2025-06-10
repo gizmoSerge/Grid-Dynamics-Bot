@@ -1,4 +1,4 @@
-# Grid Dynamics Entry Test Bot
+# Grid Dynamics Test Bot
 
 This repository contains scripts designed to automate solving the entry test used by Grid Dynamics. The main goal of the app is to capture the on-screen question, send it to an AI model for analysis, and automatically select the correct answer. The process involves taking a screenshot of the test interface, using OCR to detect text, and clicking on the detected answer.
 
