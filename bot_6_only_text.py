@@ -1,6 +1,6 @@
 import pyautogui
 import base64
-import api_keys
+import os
 from time import sleep
 from openai import OpenAI
 
@@ -44,7 +44,7 @@ def main():
     print(f'-- {ai_response}')
 
 if __name__ == "__main__":
-    client = OpenAI(api_key=api_keys.openai_api_key)
+    client = OpenAI(api_key=os.environ.get('OPENAI_API_KEY'))
     print('Sleep for 3 seconds...')
     sleep(3)
     try:
